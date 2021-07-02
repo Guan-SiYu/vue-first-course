@@ -10,7 +10,7 @@ export default {
     props: {
         title: {
             type: String,
-            default: "default title",
+            default: "yo,计划列表清单🗓",
         },
     },
     components: {
