@@ -1,11 +1,11 @@
 {
-    "name": "excersice",
+    "name": "vue-crash-2021",
     "version": "0.1.0",
     "private": true,
     "scripts": {
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build",
-        "backend": "json-server --watch db.json --port 5001"
+        "backend": "json-server --watch db.json --port 5000"
     },
     "dependencies": {
         "core-js": "^3.6.5",

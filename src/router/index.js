@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
-
-import Home from "../views/Home";
 import About from "../views/About";
+import Home from "../views/Home";
+
 const routes = [
     {
         path: "/",
@@ -15,7 +15,7 @@ const routes = [
     },
 ];
 const router = createRouter({
-    history: createWebHistory(process.env.BASE_URL),
+    history: createWebHistory(process.env.BASE_URl),
     routes,
 });
 export default router;

@@ -1,4 +1,4 @@
-# excersice
+# vue-crash-2021
 
 ## Project setup
 ```

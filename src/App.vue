@@ -1,17 +1,34 @@
 <template>
     <div class="container">
-        <h1>hello world</h1>
-        <Header title="This is Title" />
-        <router-view></router-view>
+        <h1>Todo List hahahah</h1>
+        <Header
+            @toggle-add-task-view="toggleAddTaskView"
+            :show_add_task="showAddTasksView"
+        />
+
+        <router-view :showAddTasksView="showAddTasksView"></router-view>
+        <Footer />
     </div>
 </template>
 
 <script>
-import Header from "./components/Header.vue";
+import Header from "./components/Header";
+import Footer from "./components/Footer.vue";
 export default {
     name: "App",
     components: {
         Header,
+        Footer,
+    },
+    data() {
+        return {
+            showAddTasksView: false,
+        };
+    },
+    methods: {
+        toggleAddTaskView() {
+            this.showAddTasksView = !this.showAddTasksView;
+        },
     },
 };
 </script>
